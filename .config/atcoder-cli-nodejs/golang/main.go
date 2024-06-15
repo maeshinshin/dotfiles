@@ -51,6 +51,7 @@ func sum(a []int64) (s int64) {
 	return
 }
 
+// algorithm
 func lowerBound(a []int, x int) int {
 	idx := sort.Search(len(a), func(i int) bool {
 		return a[i] >= x
@@ -63,6 +64,39 @@ func upperBound(a []int, x int) int {
 		return a[i] > x
 	})
 	return idx
+}
+
+func next_permutation(x sort.Interface) bool {
+	n := x.Len()
+	if n <= 1 {
+		return false
+	}
+
+	i := n - 2
+	for i >= 0 && !x.Less(i, i+1) {
+		i--
+	}
+	if i < 0 {
+		reverse(x, 0, n-1)
+		return false
+	}
+
+	j := n - 1
+	for !x.Less(i, j) {
+		j--
+	}
+
+	x.Swap(i, j)
+	reverse(x, i+1, n-1)
+	return true
+}
+
+func reverse(x sort.Interface, start, end int) {
+	for start < end {
+		x.Swap(start, end)
+		start++
+		end--
+	}
 }
 
 // scan
