@@ -22,21 +22,21 @@ func main() {
 	}
 }
 
-func max(a, b int) int {
+func max(a, b int64) int64 {
 	if a > b {
 		return a
 	}
 	return b
 }
 
-func min(a, b int) int {
+func min(a, b int64) int64 {
 	if a < b {
 		return a
 	}
 	return b
 }
 
-func abs(a int) int {
+func abs(a int64) int64 {
 	if a >= 0 {
 		return a
 	}
@@ -66,7 +66,7 @@ func upperBound(a []int, x int) int {
 	return idx
 }
 
-func next_permutation(x sort.Interface) bool {
+func nextPermutation(x sort.Interface) bool {
 	n := x.Len()
 	if n <= 1 {
 		return false
@@ -97,6 +97,24 @@ func reverse(x sort.Interface, start, end int) {
 		start++
 		end--
 	}
+}
+
+// heap queue
+type IntHeap []int64
+
+func (h IntHeap) Len() int           { return len(h) }
+func (h IntHeap) Less(i, j int) bool { return h[i] < h[j] }
+func (h IntHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *IntHeap) Push(x interface{}) {
+	*h = append(*h, x.(int64))
+}
+
+func (h *IntHeap) Pop() interface{} {
+	old := *h
+	n := len(old)
+	x := old[n-1]
+	*h = old[0 : n-1]
+	return x
 }
 
 // scan
