@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
 	fi
 fi
 
-export PATH=$PATH:$HOME/.cargo/bin
 source <(kubectl completion bash)
+source <(kubesec completion bash)
 complete -o default -F __start_kubectl k
 complete -C /usr/local/bin/kubesec kubesec
