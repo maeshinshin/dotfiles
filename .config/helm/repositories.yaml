@@ -1,0 +1,30 @@
+apiVersion: ""
+generated: "0001-01-01T00:00:00Z"
+repositories:
+- caFile: ""
+  certFile: ""
+  insecure_skip_tls_verify: false
+  keyFile: ""
+  name: jetstack
+  pass_credentials_all: false
+  password: ""
+  url: https://charts.jetstack.io
+  username: ""
+- caFile: ""
+  certFile: ""
+  insecure_skip_tls_verify: false
+  keyFile: ""
+  name: descheduler
+  pass_credentials_all: false
+  password: ""
+  url: https://kubernetes-sigs.github.io/descheduler
+  username: ""
+- caFile: ""
+  certFile: ""
+  insecure_skip_tls_verify: false
+  keyFile: ""
+  name: nfs-subdir-external-provisioner
+  pass_credentials_all: false
+  password: ""
+  url: https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner
+  username: ""

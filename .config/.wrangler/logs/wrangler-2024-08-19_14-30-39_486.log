@@ -1,0 +1,88 @@
+
+--- 2024-08-19T14:30:39.572Z debug
+🪵  Writing logs to "/home/maesh/.config/.wrangler/logs/wrangler-2024-08-19_14-30-39_486.log"
+---
+
+--- 2024-08-19T14:30:39.572Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2024-08-19T14:30:39.573Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at NodeFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:12226:24)
+    at makeCallSync.subPath.subPath (/home/maesh/git/remix-app/.pnp.cjs:14286:26)
+    at ZipOpenFS.makeCallSync (/home/maesh/git/remix-app/.pnp.cjs:14917:14)
+    at ZipOpenFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:14285:17)
+    at VirtualFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at PosixFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at NodePathFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at Object.readFileSync (node:fs:452:35)
+    at NodeFS.readFileSync (/home/maesh/git/remix-app/.pnp.cjs:12521:24) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T14:30:39.842Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at NodeFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:12226:24)
+    at makeCallSync.subPath.subPath (/home/maesh/git/remix-app/.pnp.cjs:14286:26)
+    at ZipOpenFS.makeCallSync (/home/maesh/git/remix-app/.pnp.cjs:14917:14)
+    at ZipOpenFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:14285:17)
+    at VirtualFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at PosixFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at NodePathFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at Object.readFileSync (node:fs:452:35)
+    at NodeFS.readFileSync (/home/maesh/git/remix-app/.pnp.cjs:12521:24) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T14:30:39.846Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2024-08-19T14:30:39.846Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at NodeFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:12226:24)
+    at makeCallSync.subPath.subPath (/home/maesh/git/remix-app/.pnp.cjs:14286:26)
+    at ZipOpenFS.makeCallSync (/home/maesh/git/remix-app/.pnp.cjs:14917:14)
+    at ZipOpenFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:14285:17)
+    at VirtualFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at PosixFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at NodePathFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at Object.readFileSync (node:fs:452:35)
+    at NodeFS.readFileSync (/home/maesh/git/remix-app/.pnp.cjs:12521:24) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T14:30:39.978Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at NodeFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:12226:24)
+    at makeCallSync.subPath.subPath (/home/maesh/git/remix-app/.pnp.cjs:14286:26)
+    at ZipOpenFS.makeCallSync (/home/maesh/git/remix-app/.pnp.cjs:14917:14)
+    at ZipOpenFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:14285:17)
+    at VirtualFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at PosixFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at NodePathFS.openSync (/home/maesh/git/remix-app/.pnp.cjs:13873:24)
+    at Object.readFileSync (node:fs:452:35)
+    at NodeFS.readFileSync (/home/maesh/git/remix-app/.pnp.cjs:12521:24) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---

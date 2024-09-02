@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
@@ -56,7 +56,7 @@ return {
   {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)
-      require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
+  require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
       -- add more custom autopairs configuration such as custom rules
       local npairs = require "nvim-autopairs"
       local Rule = require "nvim-autopairs.rule"
@@ -80,6 +80,16 @@ return {
         -- disable for .vim files, but it work for another filetypes
         Rule("a", "a", "-vim")
       )
+    end,
+  },
+
+  {
+    "benlubas/molten-nvim",
+    version = "^1.0.0", -- use version <2.0.0 to avoid breaking changes
+    build = ":UpdateRemotePlugins",
+    init = function()
+        -- this is an example, not a default. Please see the readme for more configuration options
+        vim.g.molten_output_win_max_height = 12
     end,
   },
 }

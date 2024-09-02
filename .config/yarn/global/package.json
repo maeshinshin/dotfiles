@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "cloudflare": "^3.5.0",
+    "create-cloudflare": "^2.25.0"
+  }
+}

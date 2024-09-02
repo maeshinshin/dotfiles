@@ -1,0 +1,130 @@
+
+--- 2024-08-19T13:07:01.038Z debug
+🪵  Writing logs to "/home/maesh/.config/.wrangler/logs/wrangler-2024-08-19_13-07-00_963.log"
+---
+
+--- 2024-08-19T13:07:01.038Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2024-08-19T13:07:01.043Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at Object.readFileSync (node:fs:452:35)
+    at tryLoadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159126:72)
+    at loadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159135:12)
+    at getVarsForDev (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:198246:18)
+    at getBindings (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:206174:10)
+    at getMiniflareOptionsFromConfig (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207315:20)
+    at getPlatformProxy (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207288:34)
+    at configureServer (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/cloudflare-proxy-plugin.js:55:17)
+    at async _createServer (file:///home/maesh/git/remix-app/node_modules/vite/dist/node/chunks/dep-Cy9twKMn.js:62963:20) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T13:07:01.204Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at Object.readFileSync (node:fs:452:35)
+    at tryLoadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159126:72)
+    at loadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159135:12)
+    at getVarsForDev (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:198246:18)
+    at getPlatformProxy (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207299:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async configureServer (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/cloudflare-proxy-plugin.js:55:11)
+    at async _createServer (file:///home/maesh/git/remix-app/node_modules/vite/dist/node/chunks/dep-Cy9twKMn.js:62963:20)
+    at async configResolved (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/plugin.js:751:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T13:07:01.226Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2024-08-19T13:07:01.226Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at Object.readFileSync (node:fs:452:35)
+    at tryLoadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159126:72)
+    at loadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159135:12)
+    at getVarsForDev (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:198246:18)
+    at getBindings (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:206174:10)
+    at getMiniflareOptionsFromConfig (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207315:20)
+    at getPlatformProxy (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207288:34)
+    at configureServer (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/cloudflare-proxy-plugin.js:55:17)
+    at async _createServer (file:///home/maesh/git/remix-app/node_modules/vite/dist/node/chunks/dep-Cy9twKMn.js:62963:20) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T13:07:01.275Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at Object.readFileSync (node:fs:452:35)
+    at tryLoadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159126:72)
+    at loadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159135:12)
+    at getVarsForDev (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:198246:18)
+    at getPlatformProxy (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207299:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async configureServer (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/cloudflare-proxy-plugin.js:55:11)
+    at async _createServer (file:///home/maesh/git/remix-app/node_modules/vite/dist/node/chunks/dep-Cy9twKMn.js:62963:20)
+    at async configResolved (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/plugin.js:751:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T13:07:02.354Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2024-08-19T13:07:02.354Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at Object.readFileSync (node:fs:452:35)
+    at tryLoadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159126:72)
+    at loadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159135:12)
+    at getVarsForDev (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:198246:18)
+    at getBindings (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:206174:10)
+    at getMiniflareOptionsFromConfig (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207315:20)
+    at getPlatformProxy (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207288:34)
+    at configureServer (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/cloudflare-proxy-plugin.js:55:17)
+    at async _createServer (file:///home/maesh/git/remix-app/node_modules/vite/dist/node/chunks/dep-Cy9twKMn.js:62963:20) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
+
+--- 2024-08-19T13:07:02.403Z debug
+Failed to load .env file "/home/maesh/git/remix-app/.dev.vars": Error: ENOENT: no such file or directory, open '/home/maesh/git/remix-app/.dev.vars'
+    at Object.openSync (node:fs:573:18)
+    at Object.readFileSync (node:fs:452:35)
+    at tryLoadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159126:72)
+    at loadDotEnv (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:159135:12)
+    at getVarsForDev (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:198246:18)
+    at getPlatformProxy (/home/maesh/git/remix-app/node_modules/wrangler/wrangler-dist/cli.js:207299:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async configureServer (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/cloudflare-proxy-plugin.js:55:11)
+    at async _createServer (file:///home/maesh/git/remix-app/node_modules/vite/dist/node/chunks/dep-Cy9twKMn.js:62963:20)
+    at async configResolved (/home/maesh/git/remix-app/node_modules/@remix-run/dev/dist/vite/plugin.js:751:27) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/home/maesh/git/remix-app/.dev.vars'
+}
+---
