@@ -117,5 +117,11 @@ fi
 
 source <(kubectl completion bash)
 source <(kubesec completion bash)
+source <(kind completion bash)
+source <(kubebuilder completion bash)
 complete -o default -F __start_kubectl k
 complete -C /usr/local/bin/kubesec kubesec
+export PATH=$PATH:/home/maesh/.cargo/bin
+eval "$(zoxide init bash)"
+export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$(yarn global bin):$PATH"
