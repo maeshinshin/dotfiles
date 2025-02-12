@@ -1,0 +1,6 @@
+# configureation of completions
+
+source <(kubectl completion bash)
+source <(kubesec completion bash)
+source <(aqua completion bash)
+complete -F __start_kubectl k

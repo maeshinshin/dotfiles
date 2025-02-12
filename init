@@ -1,0 +1,83 @@
+#!/bin/sh
+# create toolbox:
+toolbox create
+
+# dnf update:
+toolbox run sudo dnf_update
+toolbox run sudo dnf -y group install development-tools
+
+# install go, npm, cmake
+toolbox run sudo dnf install -y go npm cmake python3-pip
+
+# install search-light
+git clone git@github.com:icedman/search-light.git ~/git/search-light
+cd ~/git/search-light
+toolbox run make
+
+# install kimpanel
+git clone git@github.com:wengxt/gnome-shell-extension-kimpanel.git ~/git/gnome-shell-extension-kimpanel
+mkdir -p ~/git/gnome-shell-extension-kimpanel/build
+cd ~/git/gnome-shell-extension-kimpanel/build
+toolbox run cmake -DCMAKE_INSTALL_PREFIX=$HOME/.local .. 
+toolbox run make install/local/fast 
+
+# install_aqua_with_go:
+toolbox run go install github.com/aquaproj/aqua/v2/cmd/aqua@latest 
+
+# install dotfiles from github:
+ln -s ~/git/dotfiles/.bashrc ~/.bashrc
+ln -s ~/git/dotfiles/.bash_profile ~/.bash_profile
+ln -s ~/git/dotfiles/.bash_logout ~/.bash_logout
+ln -s ~/git/dotfiles/.bashrc.d ~/.bashrc.d
+source ~/.bash_profile
+
+# install starship config
+ln -s ~/git/dotfiles/.config/starship.toml ~/.config/starship.toml
+
+# install_packages_with_aqua: _cd_to_git
+git clone git@github.com:maeshinshin/aqua-yaml.git ~/git/aqua-yaml
+cd ~/git/aqua-yaml
+mkdir -p ~/.aqua
+ln -s ~/git/aqua-yaml/aqua.yaml ~/.aqua/aqua.yaml
+aqua i
+
+# install n
+cd ~/.local/share
+toolbox npm config set prefix=~/.local/share/node_modules/
+toolbox run npm install -g n
+n stable 
+
+# uninstall npm
+toolbox run sudo dnf remove -y npm
+
+# install astronvim config:
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.cache/nvim
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+
+# install nerd font
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip
+unzip 0xProto.zip
+rm -f 0xProto.zip
+fc-cache -fv
+
+# install atcoder-cli
+npm install -g atcoder-cli
+mkdir -p ~/.config/atcoder-cli-nodejs
+ln -s ~/git/dotfiles/.config/atcoder-cli-nodejs/config.json ~/.config/atcoder-cli-nodejs/config.json
+ln -s ~/git/dotfiles/.config/atcoder-cli-nodejs/golang ~/.config/atcoder-cli-nodejs/golang
+
+# instal online-judge-tools
+git clone git@github.com:online-judge-tools/oj.git ~/git/oj
+cd ~/git/oj
+toolbox pip install .
+
+# install fcitx5-mozc ugrep
+sudo rpm-ostree install fcitx5-mozc ugrep
+sudo systemctl reboot
+
