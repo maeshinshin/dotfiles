@@ -19,6 +19,9 @@
       };
     };
     gnome = {
+      core-utilities = {
+      	enable = false;
+      };
       core-shell = {
         enable = true;
       };
