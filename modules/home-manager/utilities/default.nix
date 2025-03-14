@@ -4,5 +4,6 @@
     ./bottom
     ./eza
     ./ripgrep
+    ./wl-clipboard
   ];
 }

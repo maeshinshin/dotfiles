@@ -10,6 +10,7 @@
     ../packages
     ../pipewire
     ../proxy
+    ../terminal/foot
     ../timezone
     ../touchpad
     ../users

@@ -11,8 +11,8 @@
       defaultFonts = {
         serif = [ "Noto serif CJK JP" "Noto Color Emoji" ];
         sansSerif = [ "Noto Sans CJK JP" "Noto Color Emoji" ];
-        monospace = [ "" "Noto Color Emoji" ];
-        emoji = [ "Noto Color Emoji" ];
+        monospace = [ "HackGen Console NF" "Noto Color Emoji" ];
+        emoji = [ "HackGen Console NF" "Noto Color Emoji" ];
       };
     };
   };
