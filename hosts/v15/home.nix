@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   imports = [
     ../../modules/home-manager/common
-    ../../modules/home-manager/keymap/us
+    ../../modules/home-manager/keymap/jp
   ];
 
   home = rec {

@@ -1,4 +1,4 @@
-{inputs, ...}: {
+{ inputs, ... }: {
   nixos = {
     home = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -12,7 +12,10 @@
         ../modules/nixos/desktop/gnome.nix
         ../modules/nixos/docker/withNvidia
         ../modules/nixos/rdp/xrdp
+        ../modules/nixos/openssh
         ../modules/nixos/systemd/sleep/nosleep
+        ../modules/nixos/shell/bash
+        ../modules/nixos/terminal/foot/bash
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -24,7 +27,7 @@
         inherit inputs;
       };
     };
-v15 = inputs.nixpkgs.lib.nixosSystem {
+    v15 = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         ./v15/configuration.nix
@@ -34,7 +37,8 @@ v15 = inputs.nixpkgs.lib.nixosSystem {
         ../modules/nixos/common
         ../modules/nixos/desktop/gnome.nix
         ../modules/nixos/docker/withoutNvidia
-        ../modules/nixos/systemd/sleep/nosleep
+        ../modules/nixos/shell/bash
+        ../modules/nixos/terminal/foot/bash
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
