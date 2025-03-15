@@ -17,10 +17,13 @@
           enable = true;
         };
       };
+      excludePackages = with pkgs; [
+        xterm
+      ];
     };
     gnome = {
       core-utilities = {
-      	enable = false;
+        enable = false;
       };
       core-shell = {
         enable = true;
