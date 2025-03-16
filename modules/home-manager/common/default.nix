@@ -6,6 +6,7 @@
     ../git
     ../home-manager
     ../openssh
+    ../programinglang/go
     ../utilities
     ../xdg
   ];
