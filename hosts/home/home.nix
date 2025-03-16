@@ -9,7 +9,7 @@
     homeDirectory = "/home/${username}";
     stateVersion = "24.11";
     sessionVariables = {
-      EDITOR = "neovim";
+      EDITOR = "nvim";
     };
   };
 

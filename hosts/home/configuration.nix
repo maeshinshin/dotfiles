@@ -12,13 +12,6 @@
               prefixLength = 20;
             }
           ];
-          routes = [
-            {
-              address = "0.0.0.0";
-              prefixLength = 0;
-              via = "192.168.1.1";
-            }
-          ];
         };
         wakeOnLan = {
           enable = true;
