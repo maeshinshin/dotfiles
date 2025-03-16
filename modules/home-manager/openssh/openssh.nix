@@ -5,11 +5,11 @@
       addKeysToAgent = "confirm";
       compression = true;
       controlMaster = "yes";
-      extraConfig = "
+      extraConfig = ''
         Include conf.d/*.conf
         Include conf.d/*/*.conf
         Include ./*.conf
-              ";
+      '';
     };
   };
 }
