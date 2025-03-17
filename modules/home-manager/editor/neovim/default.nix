@@ -10,6 +10,7 @@
       astrolsp
       astrotheme
       astroui
+      copilot-vim
       mason-null-ls-nvim
       mason-nvim-dap-nvim
       lazy-nvim
