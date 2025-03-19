@@ -8,7 +8,7 @@
         ipv4 = {
           addresses = [
             {
-              address = "192.168.1.9";
+              address = "192.168.2.1";
               prefixLength = 20;
             }
           ];
@@ -17,6 +17,13 @@
           enable = true;
         };
       };
+    };
+    nameservers = [
+      "192.168.1.1"
+    ];
+    defaultGateway = {
+      address = "192.168.1.1";
+      interface = "enp3s0";
     };
   };
 
