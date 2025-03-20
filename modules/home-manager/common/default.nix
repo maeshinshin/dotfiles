@@ -5,6 +5,7 @@
     ../fonts
     ../git
     ../home-manager
+    ../megasync
     ../openssh
     ../programinglang/go
     ../utilities
