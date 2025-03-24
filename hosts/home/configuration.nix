@@ -2,6 +2,14 @@
   nixpkgs.config.allowUnfree = true;
 
   networking = {
+    interfaces = {
+      enp3s0 = {
+        wakeOnLan = {
+          enable = true;
+        };
+      };
+    };
+    nameservers = [ "192.168.1.1" ];
     networkmanager = {
       dns = "none";
       ensureProfiles = {
@@ -14,14 +22,9 @@
             };
             ipv4 = {
               method = "manual";
-              address-data = [
-                {
-                  address = "192.168.2.1";
-                  prefix = 20;
-                }
-              ];
+              addresses = "192.168.2.1/20";
               gateway = "192.168.1.1";
-              dns = [ "192.168.1.1" ];
+              dns = "192.168.1.1";
             };
             ipv6.method = "ignore";
           };
