@@ -8,6 +8,7 @@
     ../megasync
     ../openssh
     ../programinglang/go
+    ../rdp
     ../utilities
     ../xdg
   ];
