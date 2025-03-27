@@ -10,7 +10,6 @@
     ../openssh
     ../programinglang/go
     ../rdp
-    ../taskmanager/coretime
     ../utilities
     ../xdg
   ];
