@@ -1,6 +1,7 @@
 {
   imports = [
     ../browser/firefox
+    ../communication
     ../editor/neovim
     ../fonts
     ../git
