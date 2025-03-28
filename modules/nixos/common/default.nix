@@ -3,6 +3,7 @@
     ../bluetooth
     ../boot
     ../console
+    ../direnv/bash
     ../gnupg
     ../i18n
     ../networking
