@@ -10,6 +10,7 @@
     ../openssh
     ../programinglang/go
     ../rdp
+    ../shell/bash
     ../utilities
     ../xdg
   ];

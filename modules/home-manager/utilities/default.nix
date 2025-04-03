@@ -4,6 +4,7 @@
     ./cloudflared
     ./eza
     ./ripgrep
+    ./kubernetes-tools
     ./wl-clipboard
   ];
 }
