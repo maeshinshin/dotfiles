@@ -104,4 +104,19 @@
       };
     };
   };
+  darwin = {
+    macmini = inputs.nix-darwin.lib.darwinSystem {
+      system = "aarch64-darwin";
+      modules = [
+        ./macmini/configuration.nix
+        ../modules/nixos/macmini
+        inputs.home-manager.darwinModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.maesh = import ./macmini/home.nix;
+        }
+      ];
+    };
+  };
 }
