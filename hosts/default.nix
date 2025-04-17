@@ -76,5 +76,32 @@
         inherit inputs;
       };
     };
+    lab = inputs.nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./lab/configuration.nix
+        ./lab/hardware-configuration.nix
+        ../modules/hardware/cpu-intel
+        ../modules/hardware/nvidia
+        ../modules/hardware/storage-ssd
+        ../modules/nixos/common
+        ../modules/nixos/desktop/gnome.nix
+        ../modules/nixos/docker/withNvidia
+        ../modules/nixos/rdp/xrdp
+        ../modules/nixos/openssh
+        ../modules/nixos/systemd/sleep/nosleep
+        ../modules/nixos/shell/bash
+        ../modules/nixos/terminal/foot/bash
+        inputs.home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.maesh = import ./home/home.nix;
+        }
+      ];
+      specialArgs = {
+        inherit inputs;
+      };
+    };
   };
 }
