@@ -50,5 +50,31 @@
         inherit inputs;
       };
     };
+    wsl = inputs.nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./wsl/configuration.nix
+        ../modules/hardware/cpu-intel
+        ../modules/hardware/storage-ssd
+        ../modules/nixos/wsl
+        ../modules/nixos/docker/withoutNvidia
+        ../modules/nixos/shell/bash
+	inputs.nixos-wsl.nixosModules.default
+        {
+          wsl.enable = true;
+	  wsl.defaultUser = "maesh";
+	  system.stateVersion = "24.11";
+        }
+        inputs.home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.maesh = import ./wsl/home.nix;
+        }
+      ];
+      specialArgs = {
+        inherit inputs;
+      };
+    };
   };
 }
