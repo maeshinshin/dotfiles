@@ -5,6 +5,7 @@
     ./eza
     ./ripgrep
     ./kubernetes-tools
+    ./online-judge-tools
     ./wl-clipboard
   ];
 }
