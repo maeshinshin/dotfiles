@@ -3,6 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    xremap.url = "github:xremap/nix-flake";
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     nix-darwin = {
       url = "github:LnL7/nix-darwin";

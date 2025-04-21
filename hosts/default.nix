@@ -16,6 +16,7 @@
         ../modules/nixos/systemd/sleep/nosleep
         ../modules/nixos/shell/bash
         ../modules/nixos/terminal/foot/bash
+        ../modules/nixos/xremap
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -23,9 +24,7 @@
           home-manager.users.maesh = import ./home/home.nix;
         }
       ];
-      specialArgs = {
-        inherit inputs;
-      };
+      specialArgs = { inherit inputs; };
     };
     v15 = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -39,6 +38,7 @@
         ../modules/nixos/docker/withoutNvidia
         ../modules/nixos/shell/bash
         ../modules/nixos/terminal/foot/bash
+        ../modules/nixos/xremap
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
@@ -46,9 +46,7 @@
           home-manager.users.maesh = import ./v15/home.nix;
         }
       ];
-      specialArgs = {
-        inherit inputs;
-      };
+      specialArgs = { inherit inputs; };
     };
     wsl = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -59,11 +57,11 @@
         ../modules/nixos/wsl
         ../modules/nixos/docker/withoutNvidia
         ../modules/nixos/shell/bash
-	inputs.nixos-wsl.nixosModules.default
+        inputs.nixos-wsl.nixosModules.default
         {
           wsl.enable = true;
-	  wsl.defaultUser = "maesh";
-	  system.stateVersion = "24.11";
+          wsl.defaultUser = "maesh";
+          system.stateVersion = "24.11";
         }
         inputs.home-manager.nixosModules.home-manager
         {
@@ -72,9 +70,7 @@
           home-manager.users.maesh = import ./wsl/home.nix;
         }
       ];
-      specialArgs = {
-        inherit inputs;
-      };
+      specialArgs = { inherit inputs; };
     };
     lab = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
@@ -99,9 +95,7 @@
           home-manager.users.maesh = import ./home/home.nix;
         }
       ];
-      specialArgs = {
-        inherit inputs;
-      };
+      specialArgs = { inherit inputs; };
     };
   };
   darwin = {
