@@ -4,6 +4,7 @@
     ../boot
     ../console
     ../direnv/bash
+    ../filemanager
     ../gnupg
     ../i18n
     ../networking
