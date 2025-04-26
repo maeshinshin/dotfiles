@@ -7,5 +7,6 @@
     ./kubernetes-tools
     ./online-judge-tools
     ./wl-clipboard
+    ./zoxide
   ];
 }
