@@ -1,7 +1,6 @@
 { ... }: {
   imports = [
     ../../modules/home-manager/common
-    ../../modules/home-manager/keymap/us
   ];
 
   home = rec {

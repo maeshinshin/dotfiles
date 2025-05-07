@@ -13,5 +13,6 @@
     ../pipewire
     ../timezone
     ../users
+    ../warp
   ];
 }
