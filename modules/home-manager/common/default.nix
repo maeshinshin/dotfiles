@@ -6,6 +6,7 @@
     ../fonts
     ../git
     ../home-manager
+    ../latex
     ../megasync
     ../openssh
     ../programinglang/go
