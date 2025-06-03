@@ -1,25 +1,24 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   services = {
     xserver = {
       enable = true;
       xkb = {
         layout = "us";
+        variant = "";
       };
-      displayManager = {
-        gdm = {
-          enable = true;
-          wayland = true;
-          autoSuspend = false;
-        };
-      };
+      excludePackages = with pkgs; [ xterm ];
       desktopManager = {
         gnome = {
           enable = true;
         };
       };
-      excludePackages = with pkgs; [
-        xterm
-      ];
+      displayManager = {
+        defaultSession = "gnome";
+        gdm = {
+          enable = true;
+          wayland = true;
+        };
+      };
     };
     gnome = {
       core-utilities = {
@@ -31,11 +30,9 @@
       gnome-keyring = {
         enable = true;
       };
-      gnome-remote-desktop = {
-        enable = true;
-      };
     };
   };
+
   programs = {
     xwayland = {
       enable = true;
