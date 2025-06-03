@@ -3,6 +3,7 @@
     ../browser/firefox
     ../communication
     ../editor/neovim
+    ../editor/vscode
     ../fonts
     ../git
     ../home-manager

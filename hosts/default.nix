@@ -94,6 +94,7 @@
         ../modules/nixos/systemd/sleep/nosleep
         ../modules/nixos/shell/bash
         ../modules/nixos/terminal/foot/bash
+        ../modules/nixos/terminal/ghostty
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
