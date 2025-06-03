@@ -11,6 +11,7 @@
     ../nix
     ../packages
     ../pipewire
+    ../tailscale
     ../timezone
     ../users
     ../warp
