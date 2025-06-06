@@ -2,7 +2,7 @@
   nixpkgs.config.allowUnfree = true;
 
   networking = {
-    hostname = "home";
+    hostName = "home";
     interfaces = {
       enp3s0 = {
         wakeOnLan = {
