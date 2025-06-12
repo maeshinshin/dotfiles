@@ -3,6 +3,9 @@
 
   networking = {
     hostName = "home";
+    extraHosts = ''
+      192.168.10.200 grafana.cozy.maesh.dev
+    '';
     interfaces = {
       enp3s0 = {
         wakeOnLan = {
