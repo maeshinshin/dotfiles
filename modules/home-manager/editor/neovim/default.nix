@@ -16,6 +16,7 @@
       lazy-nvim
     ];
     extraPackages = with pkgs; [
+      python314
       cargo
       gcc
     ];
