@@ -1,6 +1,7 @@
 {
   imports = [
     ../browser/firefox
+    ../browser/chrome
     ../communication
     ../editor/neovim
     ../editor/vscode

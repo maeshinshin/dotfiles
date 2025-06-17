@@ -1,11 +1,12 @@
 {
   virtualisation = {
     docker = {
+      enable = true;
+      enableNvidia = true;
       autoPrune = {
         enable = true;
         dates = "daily";
       };
-      enable = true;
     };
   };
   hardware = {
