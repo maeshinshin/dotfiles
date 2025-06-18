@@ -4,7 +4,8 @@
   networking = {
     hostName = "home";
     extraHosts = ''
-      192.168.10.200 grafana.cozy.maesh.dev
+      192.168.10.200 grafana.cozy.local
+      192.168.10.200 dashboard.cozy.local
     '';
     interfaces = {
       enp3s0 = {
