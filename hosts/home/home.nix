@@ -9,6 +9,7 @@
     stateVersion = "24.11";
     sessionVariables = {
       EDITOR = "nvim";
+      TERM = "xterm";
     };
   };
 
