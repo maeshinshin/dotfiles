@@ -1,6 +1,6 @@
-{ pkgs, ... }: {
+{ ... }: {
   imports = [
-    ../../modules/home-manager/common
+    ../../modules/home-manager/cli
   ];
 
   home = rec {
@@ -9,7 +9,7 @@
     stateVersion = "24.11";
     sessionVariables = {
       EDITOR = "nvim";
-      TERM = "xterm";
+      TERM= "xterm";
     };
   };
 

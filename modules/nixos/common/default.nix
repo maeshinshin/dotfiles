@@ -1,20 +1,8 @@
 {
   imports = [
-    ../bluetooth
-    ../boot
-    ../console
-    ../direnv/bash
     ../filemanager
-    ../gnupg
-    ../i18n
-    ../networking
-    ../nix
-    ../packages
-    ../pipewire
-    ../tailscale
-    ../timezone
-    ../users
     ../warp
+    ../cli
   ];
   nix = {
     gc = {

@@ -30,6 +30,28 @@
       ];
       specialArgs = { inherit inputs; };
     };
+    jump = inputs.nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./jump/configuration.nix
+        ./jump/hardware-configuration.nix
+        ../modules/hardware/cpu-intel
+        ../modules/hardware/storage-ssd
+        ../modules/nixos/cli
+        ../modules/nixos/docker/withoutNvidia
+        ../modules/nixos/openssh
+        ../modules/nixos/systemd/sleep/nosleep
+        ../modules/nixos/shell/bash
+        ../modules/nixos/xremap
+        inputs.home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.maesh = import ./jump/home.nix;
+        }
+      ];
+      specialArgs = { inherit inputs; };
+    };
     v15 = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [

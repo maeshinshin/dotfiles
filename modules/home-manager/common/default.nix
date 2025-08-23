@@ -3,18 +3,11 @@
     ../browser/firefox
     ../browser/chrome
     ../communication
-    ../editor/neovim
+    ../cli
     ../editor/vscode
-    ../fonts
-    ../git
-    ../home-manager
     ../latex
     ../megasync
-    ../openssh
     ../programinglang/go
     ../rdp
-    ../shell/bash
-    ../utilities
-    ../xdg
   ];
 }
