@@ -18,7 +18,6 @@
         ../modules/nixos/systemd/sleep/nosleep
         ../modules/nixos/shell/bash
         ../modules/nixos/terminal/foot/bash
-        ../modules/nixos/terminal/ghostty
         ../modules/nixos/terminal/kitty
         ../modules/nixos/xremap
         inputs.home-manager.nixosModules.home-manager
@@ -64,7 +63,6 @@
         ../modules/nixos/docker/withoutNvidia
         ../modules/nixos/shell/bash
         ../modules/nixos/terminal/foot/bash
-        ../modules/nixos/terminal/ghostty
         ../modules/nixos/terminal/kitty
         ../modules/nixos/xremap
         inputs.home-manager.nixosModules.home-manager
@@ -116,7 +114,6 @@
         ../modules/nixos/systemd/sleep/nosleep
         ../modules/nixos/shell/bash
         ../modules/nixos/terminal/foot/bash
-        ../modules/nixos/terminal/ghostty
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;

@@ -6,6 +6,7 @@
     ../home-manager
     ../openssh
     ../shell/bash
+    ../terminal
     ../utilities
     ../xdg
   ];

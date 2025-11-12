@@ -2,5 +2,6 @@
   imports = [
     ./slack
     ./telegram
+    ./discord
   ];
 }
