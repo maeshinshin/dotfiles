@@ -1,5 +1,9 @@
 { pkgs, ... }: {
   services = {
+    displayManager =
+      {
+        defaultSession = "gnome";
+      };
     xserver = {
       enable = true;
       xkb = {
@@ -13,7 +17,6 @@
         };
       };
       displayManager = {
-        defaultSession = "gnome";
         gdm = {
           enable = true;
           wayland = true;
@@ -21,7 +24,7 @@
       };
     };
     gnome = {
-      core-utilities = {
+      core-apps = {
         enable = false;
       };
       core-shell = {
