@@ -3,7 +3,7 @@
     noto-fonts-cjk-serif
     noto-fonts-cjk-sans
     hackgen-nf-font
-    noto-fonts-emoji
+    noto-fonts-color-emoji
   ];
   fonts = {
     fontconfig = {

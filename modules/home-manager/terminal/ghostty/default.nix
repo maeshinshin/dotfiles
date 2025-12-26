@@ -6,7 +6,7 @@
       installBatSyntax = true;
       installVimSyntax = true;
       settings = {
-        theme = "UnderTheSea";
+        theme = "Arcoiris";
       };
     };
   };

@@ -6,7 +6,6 @@
     ../cli
     ../editor/vscode
     ../latex
-    ../megasync
     ../programinglang/go
     ../rdp
   ];
