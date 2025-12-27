@@ -6,6 +6,7 @@
     ../cli
     ../editor/vscode
     ../latex
+    ../openssh
     ../programinglang/go
     ../rdp
   ];
