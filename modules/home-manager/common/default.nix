@@ -4,7 +4,7 @@
     ../browser/chrome
     ../communication
     ../cli
-    ../editor/vscode
+    ../editor/helix
     ../latex
     ../openssh
     ../programinglang/go
