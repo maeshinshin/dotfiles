@@ -4,6 +4,7 @@
     ./cloudflared
     ./dialog
     ./eza
+    ./fzf
     ./ripgrep
     ./kubernetes-tools
     ./moonlight-qt
