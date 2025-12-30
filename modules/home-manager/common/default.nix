@@ -5,7 +5,6 @@
     ../communication
     ../cli
     ../editor/helix
-    ../latex
     ../openssh
     ../programinglang/go
     ../rdp

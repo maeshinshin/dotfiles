@@ -14,5 +14,6 @@
     ./wl-clipboard
     ./zellij
     ./zoxide
+    ./zathura
   ];
 }
