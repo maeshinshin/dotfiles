@@ -11,6 +11,9 @@
       EDITOR = "nvim";
       TERM = "xterm";
     };
+    shell = {
+      enableBashIntegration = true;
+    };
   };
 
   programs.home-manager.enable = true;

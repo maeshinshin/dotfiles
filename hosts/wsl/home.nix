@@ -10,6 +10,9 @@
     sessionVariables = {
       EDITOR = "nvim";
     };
+    shell = {
+      enableBashIntegration = true;
+    };
   };
 
   programs.home-manager.enable = true;
