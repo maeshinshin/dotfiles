@@ -3,7 +3,7 @@
     git = {
       enable = true;
       userName = "maesh";
-      userEmail = "maesh.esh.sh@gmail.com";
+      userEmail = "106868314+maeshinshin@users.noreply.github.com";
       delta = {
         enable = true;
       };
