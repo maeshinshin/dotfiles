@@ -3,6 +3,7 @@
     ../filemanager
     ../warp
     ../cli
+    ../nix-ld
   ];
   nix = {
     gc = {

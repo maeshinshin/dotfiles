@@ -7,11 +7,11 @@
       delta = {
         enable = true;
       };
-      extraConfig = {
-        core = {
-          editor = "nvim";
+        extraConfig = {
+          core = {
+            editor = "nvim";
+          };
         };
       };
     };
-  };
-}
+  }

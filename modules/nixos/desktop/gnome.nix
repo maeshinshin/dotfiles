@@ -3,7 +3,15 @@
     displayManager =
       {
         defaultSession = "gnome";
+        gdm = {
+          enable = true;
+        };
       };
+    desktopManager = {
+      gnome = {
+        enable = true;
+      };
+    };
     xserver = {
       enable = true;
       xkb = {
@@ -11,17 +19,6 @@
         variant = "";
       };
       excludePackages = with pkgs; [ xterm ];
-      desktopManager = {
-        gnome = {
-          enable = true;
-        };
-      };
-      displayManager = {
-        gdm = {
-          enable = true;
-          wayland = true;
-        };
-      };
     };
     gnome = {
       core-apps = {

@@ -5,6 +5,7 @@
     viAlias = true;
     vimAlias = true;
     withNodeJs = true;
+    sideloadInitLua = true;
     plugins = with pkgs.vimPlugins; [
       astrocore
       astrolsp

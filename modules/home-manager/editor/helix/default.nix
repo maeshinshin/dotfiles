@@ -4,7 +4,6 @@
     package = pkgs.evil-helix;
     extraPackages = with pkgs; [
       marksman
-      helix-gpt
       gopls
       gotools
       goimports-reviser
